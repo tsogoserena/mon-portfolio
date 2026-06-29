@@ -265,19 +265,20 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
   const [hovered, setHovered] = useState(false);
   return (
     <div ref={ref} style={{
-      opacity: visible ? 1 : 0,
-      transform: visible ? "translateY(0) rotateX(0deg)" : "translateY(40px) rotateX(8deg)",
-      transition: `opacity 0.7s ${delay}ms, transform 0.7s ${delay}ms cubic-bezier(0.16,1,0.3,1)`,
-      background: hovered ? "rgba(255,255,255,0.07)" : "rgba(255,255,255,0.03)",
-      border: `1px solid ${hovered ? project.color + "55" : "rgba(255,255,255,0.08)"}`,
-      borderRadius: 20, padding: 28,
-      cursor: "pointer",
-      transform: hovered
-        ? `translateY(-8px) ${visible ? "" : "translateY(40px)"}` 
-        : visible ? "translateY(0)" : "translateY(40px)",
-      boxShadow: hovered ? `0 24px 60px ${project.color}20` : "none",
-      transition: "all 0.4s cubic-bezier(0.16,1,0.3,1)",
-    }}
+        opacity: visible ? 1 : 0,
+        transform: hovered
+          ? "translateY(-8px)"
+          : visible
+          ? "translateY(0)"
+          : "translateY(40px)",
+        transition: `opacity 0.7s ${delay}ms, transform 0.5s ${delay}ms cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s, background 0.3s, border-color 0.3s`,
+        background: hovered ? "rgba(255,255,255,0.07)" : "rgba(255,255,255,0.03)",
+        border: `1px solid ${hovered ? project.color + "55" : "rgba(255,255,255,0.08)"}`,
+        borderRadius: 20,
+        padding: 28,
+        cursor: "pointer",
+        boxShadow: hovered ? `0 24px 60px ${project.color}20` : "none",
+      }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
