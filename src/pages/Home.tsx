@@ -13,9 +13,9 @@ export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const stats = [
-    { value: "+5", label: "ANS D'EXPÉRIENCE" },
-    { value: "+30", label: "PROJETS LIVRÉS" },
-    { value: "+15", label: "DASHBOARDS BI" },
+    { value: "+1", label: "ANS D'EXPÉRIENCE" },
+    { value: "+5", label: "PROJETS LIVRÉS" },
+    { value: "+1", label: "DASHBOARDS BI" },
     { value: "100%", label: "ENGAGEMENT" },
   ];
 
