@@ -123,7 +123,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-white text-lg">
             <span className="bg-orange-500 text-black w-8 h-8 rounded-lg flex items-center justify-center font-extrabold text-base">A</span>
-            <span>Alex<span className="text-orange-500">.dev</span></span>
+            <span>Serena<span className="text-orange-500">.dev</span></span>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             {['About', 'Skills', 'Stack', 'Projects', 'Contact'].map((item) => (
