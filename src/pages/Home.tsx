@@ -446,6 +446,7 @@ export default function Portfolio() {
               </svg>
               LinkedIn
             </a>
+            <p className='font-bold text-white'>659209647 / 653223460</p>
           </div>
         </div>
         <p className="text-center text-[11px] text-zinc-700 tracking-wide pt-12">© 2026 Serena.dev. Tous droits réservés.</p>
